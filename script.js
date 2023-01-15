@@ -4,6 +4,7 @@ let jokeText = document.getElementsByClassName('joke')
 console.log(button)
 button.addEventListener('click', getjokes)
 function getjokes(){
+  const random = Math.floor(Math.random() * jokelist.length)
   document.getElementsByClassName('joke')[0].innerHTML = jokelist[random]
 }
 
@@ -204,5 +205,4 @@ To the mew-seum.`,
  first-aid kit.`,
 ]
 
-const random = Math.floor(Math.random() * jokelist.length)
-console.log(jokelist[random])
+
